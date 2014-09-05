@@ -1,0 +1,29 @@
+﻿Build started 8/7/2013 12:58:58 AM.
+     1>Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_CRIO_Module_TestBench\SolarBeam_CRIO_Module_TestBench.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\SolarBeam_CRIO_Module_TestBench.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\SolarBeam_CRIO_Module\BH1750.cpp ..\SolarBeam_CRIO_Module\I2C.cpp ..\SolarBeam_CRIO_Module\MainTestBench.cpp
+         BH1750.cpp
+         I2C.cpp
+         MainTestBench.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_CRIO_Module\Release\SolarBeam_CRIO_Module_TestBench.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\SolarBeam_CRIO_Module_TestBench.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_CRIO_Module\Release\SolarBeam_CRIO_Module_TestBench.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_CRIO_Module\Release\SolarBeam_CRIO_Module_TestBench.lib" /MACHINE:X86 Release\BH1750.obj
+         Release\FPGAInterface.obj
+         Release\I2C.obj
+         Release\MainTestBench.obj
+         Release\PWM.obj
+         ..\SolarBeam_CRIO_Module\SolarBeam_LabVIEW_CRIO_Module.lib
+         Generating code
+         Finished generating code
+         SolarBeam_CRIO_Module_TestBench.vcxproj -> C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_CRIO_Module\Release\SolarBeam_CRIO_Module_TestBench.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_CRIO_Module\Release\SolarBeam_CRIO_Module_TestBench.exe;#1" /manifest Release\SolarBeam_CRIO_Module_TestBench.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\SolarBeam_CRIO_Module_TestBench.unsuccessfulbuild".
+         Touching "Release\SolarBeam_CRIO_Module_TestBench.lastbuildstate".
+     1>Done Building Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_CRIO_Module_TestBench\SolarBeam_CRIO_Module_TestBench.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.20

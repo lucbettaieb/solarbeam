@@ -1,0 +1,24 @@
+﻿Build started 7/1/2013 8:49:25 AM.
+     1>Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\SolarBeam_NSC_A2L.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\SolarBeam_NSC_A2L.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Release\SolarBeam_NSC_A2L.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\SolarBeam_NSC_A2L.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Release\SolarBeam_NSC_A2L.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Release\SolarBeam_NSC_A2L.lib" /MACHINE:X86 /DLL Release\NSC_A2L.obj
+         Release\solarbeam_2_easydevices_jni_Gimbal.obj
+         PerformaxCom32bit\PerformaxCom.lib
+            Creating library C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Release\SolarBeam_NSC_A2L.lib and object C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Release\SolarBeam_NSC_A2L.exp
+         Generating code
+         Finished generating code
+         SolarBeam_NSC_A2L.vcxproj -> C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Release\SolarBeam_NSC_A2L.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Release\SolarBeam_NSC_A2L.dll;#2" /manifest Release\SolarBeam_NSC_A2L.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\SolarBeam_NSC_A2L.unsuccessfulbuild".
+         Touching "Release\SolarBeam_NSC_A2L.lastbuildstate".
+     1>Done Building Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\SolarBeam_NSC_A2L.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.50

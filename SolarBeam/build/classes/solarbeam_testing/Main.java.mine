@@ -1,0 +1,232 @@
+package solarbeam_testing;
+/*
+ * @author Luc Bettaieb
+ * 
+ * This is the main TEST class to drive the SolarBeam project.  It currently provides a
+ * test-bench environment for controlling the gimbals.  Later on, it will be able
+ * to read SunSensor input and move the gimbals accordingly using a separate tracker
+ * class that will likely be implemented within a larger SolarBeam class that
+ * will be in turn implemented in here.
+ * 
+ * For now, we wait for LabView to stop sucking.
+ */
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.*;
+
+
+public class Main extends JFrame implements KeyListener {
+    JTextField typingArea;
+    JLabel title;
+    JLabel warning;
+    JLabel spd;
+    JLabel pos;
+    
+    Key kW = new Key(87);
+    Key kD = new Key(68);
+    Key kS = new Key(83);
+    Key kA = new Key(65);
+    Key kUpArrow = new Key(38);
+    Key kDownArrow = new Key(40);
+    Key kSpace = new Key(32);
+    Key kQ = new Key(81);
+    
+    solarbeam_2.easydevices.EasyGimbal ref;
+    solarbeam_2.easydevices.EasyGimbal primary = new solarbeam_2.easydevices.EasyGimbal(0);
+    solarbeam_2.easydevices.EasyGimbal secondary = new solarbeam_2.easydevices.EasyGimbal(1);
+    //Gimbal Objects
+    
+    int selectGimbal = 0;
+    int axis = 0;
+    //Current Gimbal being controlled by the arrow keys.
+    
+    public static void main(String[] kittens){
+        
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                createAndShowGUI();
+                //Creates the GUI on screen
+            }
+        });
+    }
+    private static void createAndShowGUI(){
+        Main frame = new Main("Main");
+        frame.addComponentsToPane();
+        frame.pack();
+        frame.setVisible(true);
+        frame.setSize(500, 200);
+        frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE); //This method is necessary so if users click the X button, the window won't close. (Must press Q)
+        
+    }
+    private void addComponentsToPane(){
+        typingArea = new JTextField(20);
+        typingArea.addKeyListener(this);
+        typingArea.setForeground(Color.WHITE);
+        
+        title = new JLabel(" SOLARBEAM v002");
+        title.setFont(new Font("Sans-Serif", Font.ITALIC, 24));
+        
+        
+        warning = new JLabel("Q: Quit");
+        warning.setFont(new Font("MONOSPACED", Font.PLAIN, 14));
+        warning.setForeground(Color.RED);
+        
+        spd = new JLabel("SPD: 000");
+        spd.setFont(new Font("Monospaced", Font.PLAIN, 18));
+        
+        pos = new JLabel("X: 00000 | Y: 00000");
+        pos.setFont(new Font("Monospaced", Font.PLAIN, 18));
+        
+        typingArea.setFocusable(true);
+        
+        getContentPane().add(title, BorderLayout.PAGE_START);
+        getContentPane().add(spd, BorderLayout.CENTER);
+        getContentPane().add(pos, BorderLayout.WEST);
+        getContentPane().add(warning, BorderLayout.EAST);
+        getContentPane().add(typingArea, BorderLayout.SOUTH);
+    }
+    private Main(String name){
+        super(name);
+    }
+    
+    @Override
+    public void keyTyped(KeyEvent e) {
+        //This apparently will not be able to be used because for
+        //this key event, getKeyCode() always returns 0 for some
+        //stupid reason.  Way to go, Oracle.
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        int keycode = e.getKeyCode();
+        pos.setText("X: "+primary.getX()+" | Y: "+primary.getY());
+        spd.setText("    SPD: "+primary.getSpeed(1));
+
+        if(kSpace.checkPressed(e.getKeyCode())) { //Spacebar for switching gimbal control
+            if(selectGimbal == 0) {
+                selectGimbal = 1;
+            }
+            else {
+                selectGimbal = 0;
+            }
+            primary.stopAll();
+        }
+        if(kA.checkPressed(keycode)) { //LEFT (A)
+            if(selectGimbal == 1) {
+                primary.setXMaxLeft();
+            }
+            else if(selectGimbal == 0){
+                secondary.setXMaxLeft();
+            }
+        }
+        if(kW.checkPressed(keycode)) { //UP (W)
+            if(selectGimbal == 1) {
+                primary.setYMaxUp();
+            }
+            else if(selectGimbal == 0){
+                secondary.setYMaxUp();
+            }
+        }
+        if(kD.checkPressed(keycode)) { //RIGHT (D)
+            if(selectGimbal == 1) {
+                primary.setXMaxRight();
+            }
+            else if(selectGimbal == 0){
+                secondary.setXMaxRight();
+            }
+        }
+        if(kS.checkPressed(keycode)) { //DOWN (S)
+            if(selectGimbal == 1) {
+                primary.setYMaxDown();
+            }
+            else if(selectGimbal == 0){
+                secondary.setYMaxDown();
+            }
+        }
+        if(kUpArrow.checkPressed(keycode)){ //Y SPD UP (UP)
+            if(selectGimbal == 1) {
+                System.err.println(primary.getSpeed(1));
+                primary.setSpeed(primary.getSpeed(1) + 100, 3);
+            }
+            else if(selectGimbal == 0){
+                secondary.setSpeed(primary.getSpeed(1) + 100, 3);
+            }
+            primary.setSpeed(primary.getSpeed(1) + 100, 3);
+        }
+        if(kDownArrow.checkPressed(keycode)){ //Y SPD DOWN (DOWN)
+            if(selectGimbal == 1) {
+                System.err.println(primary.getSpeed(1));
+               primary.setSpeed(primary.getSpeed(1) - 100, 3);
+            }
+            else if(selectGimbal == 0){
+                secondary.setSpeed(primary.getSpeed(1) - 100, 3);
+            }
+        }
+        if(kQ.checkPressed(keycode)){ //QUIT, Q KEY
+            System.out.println("Gimbals finalizing...");
+            try {
+                primary.finalize();
+                //secondary.finalize();
+                System.out.println("..finalized!");
+            } catch(Throwable ex){
+                System.err.println("Error finalizing gimbals.");
+            }
+            System.out.println("System exiting.");
+            System.exit(0);
+        }
+        typingArea.setText("");
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+        int keycode = e.getKeyCode();
+        
+        if (selectGimbal == 0) {
+            ref = primary;
+        } else {
+            ref = secondary;
+        }
+        
+        kSpace.checkNotPressed(keycode);
+        kUpArrow.checkNotPressed(keycode);
+        kDownArrow.checkNotPressed(keycode);
+        
+        if(kA.checkNotPressed(keycode) || kD.checkNotPressed(keycode)) {
+            axis = 1;
+        } else if (kW.checkNotPressed(keycode) || kS.checkNotPressed(keycode)) {
+           axis = 2;
+        } else {
+            axis = 0;
+        }
+       
+        typingArea.setText("");
+    } 
+    
+    private class Key
+    {
+        private boolean isPressed;
+        private int value;
+        public Key(int value) {
+            isPressed = false;
+            this.value = value;
+        }
+        public boolean checkPressed(int valueCompare) {
+            if (valueCompare == value && !isPressed) {
+                isPressed = true;
+                return true;
+            }
+            return false;
+        }
+        public boolean checkNotPressed(int valueCompare) {
+            if (valueCompare == value && isPressed) {
+                isPressed = false;
+                return true;
+            }
+            return false;
+        }
+    }
+}

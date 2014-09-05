@@ -1,0 +1,72 @@
+﻿Build started 6/28/2013 10:16:46 PM.
+     1>Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\SolarBeam_NSC_A2L.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\SolarBeam_NSC_A2L.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Java\jdk1.7.0_25\include\win32" /I"C:\Program Files\Java\jdk1.7.0_25\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SOLARBEAM_NSC_A2L_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt NSC_A2L.cpp solarbeam_2_easydevices_jni_Gimbal.cpp
+         solarbeam_2_easydevices_jni_Gimbal.cpp
+         NSC_A2L.cpp
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(181): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(186): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(190): warning C4996: 'strset': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strset. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(251) : see declaration of 'strset'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(307): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(312): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(333): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(389): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(393): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(397): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(400): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(401): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(402): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(410): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(414): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(418): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(420): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(421): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(422): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(471): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(710): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\andrew powell\documents\solarbeam repository\trunk\other software\c++ source code and projects\solarbeam_nsc_a2l\nsc_a2l.cpp(711): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+         Generating Code...
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Debug\SolarBeam_NSC_A2L.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\SolarBeam_NSC_A2L.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Debug\SolarBeam_NSC_A2L.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Debug\SolarBeam_NSC_A2L.lib" /MACHINE:X86 /DLL Debug\SolarBeam_NSC_A2L.dll.embed.manifest.res
+         Debug\NSC_A2L.obj
+         Debug\solarbeam_2_easydevices_jni_Gimbal.obj
+         PerformaxCom64bit\PerformaxCom.lib
+            Creating library C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Debug\SolarBeam_NSC_A2L.lib and object C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Debug\SolarBeam_NSC_A2L.exp
+     1>NSC_A2L.obj : error LNK2019: unresolved external symbol __imp__fnPerformaxComOpen@8 referenced in function "public: int __thiscall NSC_A2L::connect(int)" (?connect@NSC_A2L@@QAEHH@Z)
+     1>NSC_A2L.obj : error LNK2019: unresolved external symbol __imp__fnPerformaxComSetTimeouts@8 referenced in function "public: int __thiscall NSC_A2L::connect(int)" (?connect@NSC_A2L@@QAEHH@Z)
+     1>NSC_A2L.obj : error LNK2019: unresolved external symbol __imp__fnPerformaxComGetProductString@12 referenced in function "public: int __thiscall NSC_A2L::connect(int)" (?connect@NSC_A2L@@QAEHH@Z)
+     1>NSC_A2L.obj : error LNK2019: unresolved external symbol __imp__fnPerformaxComGetNumDevices@4 referenced in function "public: int __thiscall NSC_A2L::connect(int)" (?connect@NSC_A2L@@QAEHH@Z)
+     1>NSC_A2L.obj : error LNK2019: unresolved external symbol __imp__fnPerformaxComClose@4 referenced in function "public: int __thiscall NSC_A2L::disconnect(void)" (?disconnect@NSC_A2L@@QAEHXZ)
+     1>NSC_A2L.obj : error LNK2019: unresolved external symbol __imp__fnPerformaxComSendRecv@20 referenced in function "public: int __thiscall NSC_A2L::send(char const *)" (?send@NSC_A2L@@QAEHPBD@Z)
+     1>NSC_A2L.obj : error LNK2019: unresolved external symbol __imp__fnPerformaxComFlush@4 referenced in function "public: int __thiscall NSC_A2L::flush(void)" (?flush@NSC_A2L@@QAEHXZ)
+     1>C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\Debug\SolarBeam_NSC_A2L.dll : fatal error LNK1120: 7 unresolved externals
+     1>Done Building Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_NSC_A2L\SolarBeam_NSC_A2L.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:06.04

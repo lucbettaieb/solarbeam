@@ -1,0 +1,29 @@
+﻿Build started 8/8/2013 2:44:52 PM.
+     1>Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\TestBench\TestBench.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\TestBench.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Java\jdk1.7.0_25\include" /I"C:\Program Files\Java\jdk1.7.0_25\include\win32" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\SolarBeam_Pololu\bin\Release\SolarBeam_Pololu.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /analyze- /errorReport:prompt ..\SolarBeam_Pololu_CLR\MainTestBench.cpp ..\SolarBeam_Pololu_CLR\PololuServo.cpp /clr:nostdlib 
+         MainTestBench.cpp
+         PololuServo.cpp
+         Generating Code...
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\TestBench.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:"Release\TestBench.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\TestBench.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\AssemblyInfo.obj
+         Release\MainTestBench.obj
+         Release\PololuServo.obj
+         Release\Stdafx.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         TestBench.vcxproj -> C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\TestBench.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\TestBench.exe;#1" /manifest Release\TestBench.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\TestBench.unsuccessfulbuild".
+         Touching "Release\TestBench.lastbuildstate".
+     1>Done Building Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\TestBench\TestBench.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.45

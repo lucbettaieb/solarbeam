@@ -1,0 +1,5 @@
+C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\SolarBeam_Pololu\bin\Release\SolarBeam_Pololu.dll
+C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\SolarBeam_Pololu\bin\Release\SolarBeam_Pololu.pdb
+C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\SolarBeam_Pololu\obj\x86\Release\SolarBeam_Pololu.dll
+C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\SolarBeam_Pololu\obj\x86\Release\SolarBeam_Pololu.pdb
+C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\SolarBeam_Pololu\obj\x86\Release\SolarBeam_Pololu.csprojResolveAssemblyReference.cache

@@ -1,0 +1,33 @@
+﻿Build started 8/8/2013 2:44:52 PM.
+     1>Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\SolarBeam_Pololu_CLR\SolarBeam_Pololu_CLR.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\SolarBeam_Pololu_CLR.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Java\jdk1.7.0_25\include\win32" /I"C:\Program Files\Java\jdk1.7.0_25\include" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\SolarBeam_Pololu_CLR.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\SolarBeam_Pololu\bin\Release\SolarBeam_Pololu.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /analyze- /errorReport:prompt PololuServo.cpp solarbeam_2_easydevices_jni_HitecServoMotor_Pololu.cpp /clr:nostdlib 
+         PololuServo.cpp
+         solarbeam_2_easydevices_jni_HitecServoMotor_Pololu.cpp
+         Generating Code...
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\SolarBeam_Pololu_CLR.dll" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:"Release\SolarBeam_Pololu_CLR.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\SolarBeam_Pololu_CLR.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Release\app.res
+         Release\AssemblyInfo.obj
+         Release\PololuServo.obj
+         Release\solarbeam_2_easydevices_jni_HitecServoMotor_Pololu.obj
+         Release\Stdafx.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+            Creating library C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\SolarBeam_Pololu_CLR.lib and object C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\SolarBeam_Pololu_CLR.exp
+         SolarBeam_Pololu_CLR.vcxproj -> C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\SolarBeam_Pololu_CLR.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\Release\SolarBeam_Pololu_CLR.dll;#2" /manifest Release\SolarBeam_Pololu_CLR.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\SolarBeam_Pololu_CLR.unsuccessfulbuild".
+         Touching "Release\SolarBeam_Pololu_CLR.lastbuildstate".
+     1>Done Building Project "C:\Users\Andrew Powell\Documents\SolarBeam Repository\trunk\Other Software\C++ Source Code and Projects\SolarBeam_Pololu\SolarBeam_Pololu_CLR\SolarBeam_Pololu_CLR.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.74
